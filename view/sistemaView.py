@@ -1,0 +1,2 @@
+class ZoologicoView:
+    pass
