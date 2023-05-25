@@ -29,15 +29,15 @@ class Animal:
     def getHorasDormir(self):
         return self._horasDormir
 
-    def comer(self):
-        print("Se mostrará las comidas que puede escoger para alimentar al animal")
-        for i in self._dieta:
-            print(self._dieta[i])
-        opc = int(input("Seleccione la comida mediante el ID"))
-        if(opc in self._dieta):
-            print("El animal fue alimentado con ", self._dieta[opc])
-        else:
-            raise ValueError("El elemento no esta en la lista")
+    # def comer(self):
+    #     print("Se mostrará las comidas que puede escoger para alimentar al animal")
+    #     for i in self._dieta:
+    #         print(self._dieta[i])
+    #     opc = int(input("Seleccione la comida mediante el ID"))
+    #     if(opc in self._dieta):
+    #         print("El animal fue alimentado con ", self._dieta[opc])
+    #     else:
+    #         raise ValueError("El elemento no esta en la lista")
     
     def jugar(self):
         if(self._verificadorJugar == 0):
