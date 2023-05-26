@@ -1,6 +1,6 @@
 class Habitat:
-    def __init__(self, opc, id):
-        self._id = id
+    def __init__(self, opc):
+        self._id = 0
         self._tipoHabitat = opc
         self._contAnimal = 0
         self._arrayAnimales = []
@@ -14,6 +14,9 @@ class Habitat:
     def getAnimales(self):
         return self._arrayAnimales
 
+    def setId(self, id):
+        self._id = id
+        
     def getId(self):
         return self._id
 

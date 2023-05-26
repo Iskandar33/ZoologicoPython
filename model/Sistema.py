@@ -24,6 +24,9 @@ class Sistema:
     def getContAnimales(self):
         return self._contAnimales
     
+    def setContHabs(self):
+        self._contHabitats += 1
+    
 
 
 

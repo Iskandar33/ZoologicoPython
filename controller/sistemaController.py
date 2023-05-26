@@ -14,10 +14,12 @@ class sistemaController:
         
         elif(opc == 2):
             st.divider()
-            nuevoAnimal = self.vista.crearAnimal()
-            habitatEscogido = self.vista.escogerHabitat(nuevoAnimal)
-            self.modeloSisSt.añadirAnimalHabitat(habitatEscogido, nuevoAnimal)
+            nuevoAnimalyHab = self.vista.crearAnimal()
+            self.modeloSisSt.añadirAnimalHabitat(nuevoAnimalyHab)
         
         elif(opc == 3):
             st.divider()
-            animalEscogido = self.vista.elegirAnimal()
+            self.vista.elegirAnimal()
+
+        # elif(opc == 4):
+        #     self.vista.obtenerInfo()
